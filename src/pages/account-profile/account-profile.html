@@ -1,0 +1,19 @@
+<ion-header class="forgot-password-header auth-header">
+    <ion-navbar>
+        <ion-title>Account profile</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="login-content auth-content">
+    <form class="login-form auth-form" [formGroup]="accountProfile" (ngSubmit)="doContinueRegistration()">
+        <ion-item>
+            <ion-input type="text" placeholder="Name" formControlName="name"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input type="text" placeholder="Sobrenome" formControlName="surname"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-datetime displayFormat="DD/MM/YYYY" formControlName="birthDate"></ion-datetime>
+        </ion-item>
+    </form>
+</ion-content>

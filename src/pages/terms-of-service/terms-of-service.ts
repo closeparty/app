@@ -1,0 +1,20 @@
+import { Component } from '@angular/core';
+import { ViewController } from 'ionic-angular';
+import {IonicPage} from "ionic-angular";
+
+@IonicPage({  
+  name: 'page-terms-of-service'
+})
+@Component({
+  selector: 'terms-of-service-page',
+  templateUrl: 'terms-of-service.html'
+})
+export class TermsOfServicePage {
+  constructor(public view: ViewController) {
+
+  }
+
+  dismiss() {
+    this.view.dismiss();
+  }
+}
